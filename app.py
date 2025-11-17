@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 import pickle
 from pathlib import Path
 from typing import Dict, List, Tuple
@@ -240,4 +238,5 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
 

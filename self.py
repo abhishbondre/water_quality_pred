@@ -18,7 +18,7 @@ y = df['BOD_Max']
 
 
 #Spliting Data
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
 print(f"Training set size: {X_train.shape[0]} samples")
 print(f"Testing set size: {X_test.shape[0]} samples")
 
@@ -195,4 +195,5 @@ with open('model_top5.pkl', 'wb') as file:
     pickle.dump(model_top5, file)
 
 with open('model_full.pkl', 'wb') as file:
+
     pickle.dump(model_full, file)
